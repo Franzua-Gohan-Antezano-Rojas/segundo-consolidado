@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+header {
+  text-align: center;
+  margin: 1px ;
+  
+  height: 80px;
+  background-color: rgb(7, 58, 189);
+  color: #181616;
+}
+body {
+  margin: 0%;
+
+  
+  
+  min-width: 380px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  margin-top: 20px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0a0a0a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #edeefa;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #b0e0b6;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+}
+
+.sidebar {
+  margin: 1px;
+  width: 33%;
+  background-color: rgb(7, 58, 189);
+  padding: 20px;
+  height: 100%;
+}
+
+section {
+  width: 99%;
+  height: 100%;
+  background-color: rgb(242, 242, 242);
+}
+
+.section1 {
+  text-align: center;
+  vertical-align: middle;
+  top: 35%;
+  height: 60%;
+  position: relative;
+  color: #1a1a1a;
+}
+
+.btn-custom{
+  @apply w-64 inline-block px-6 py-4 rounded-full shadow-sm font-medium transition duration-500 ease-in-out transform hover:scale-105
+}
+
+.btn-primary{
+  @apply bg-green-200 text-white hover:bg-green-300
+}
